@@ -24,5 +24,13 @@ namespace notepad
         {
             InitializeComponent();
         }
+
+        private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if(e.LeftButton== MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
     }
 }

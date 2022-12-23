@@ -11,9 +11,6 @@
         AllowsTransparency="True"
         Background="Transparent">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
         <Border CornerRadius="20">
             <Border.Background>
                 <LinearGradientBrush>
@@ -26,5 +23,11 @@
         <Grid Background="Black" Opacity="{Binding Value, ElementName=opacitySlider}">
         </Grid>
         <Slider Name="opacitySlider" Maximum="1" Width="300" Height="20" Margin="250,10,250,420"/>
+        <StackPanel
+                    VerticalAlignment="Top"
+                    Height="25"
+                    Background="Black" Opacity="0.2"
+            MouseDown="StackPanel_MouseDown">
+        </StackPanel>
     </Grid>
 </Window>
