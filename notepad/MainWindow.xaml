@@ -29,8 +29,13 @@
         <StackPanel
                     VerticalAlignment="Top"
                     Height="25"
-                    Background="Black" Opacity="0.2"
-            MouseDown="StackPanel_MouseDown"/>
+                    Background="Black"
+                    Opacity="0"
+                    MouseDown="StackPanel_MouseDown"/>
+        <StackPanel VerticalAlignment="Top"
+                    Height="2"
+                    Margin="0,25,0,0"
+                    Background="Black" Opacity="0.3"/>
         <StackPanel
                     VerticalAlignment="Bottom"
                     Height="25"
