@@ -11,16 +11,20 @@
         AllowsTransparency="True"
         Background="Transparent">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Border CornerRadius="20">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#930c3c" Offset="0"/>
-                    <GradientStop Color="#d43c64" Offset="0.5"/>
+                    <GradientStop Color="#e07e74" Offset="0"/>
+                    <GradientStop Color="#b84b6e" Offset="0.5"/>
                     <GradientStop Color="#c3043c" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <Grid Background="Black" Opacity="{Binding Value, ElementName=mySlider}"/>
-        <Slider Name="mySlider" Grid.Row="1" Maximum="1" Width="300" Height="20"/>
+        <Grid Background="Black" Opacity="{Binding Value, ElementName=opacitySlider}">
+        </Grid>
+        <Slider Name="opacitySlider" Maximum="1" Width="300" Height="20" Margin="250,10,250,420"/>
     </Grid>
 </Window>
