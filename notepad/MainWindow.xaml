@@ -9,9 +9,10 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         AllowsTransparency="True"
-        Background="Transparent">
+        Background="Transparent"
+        BorderBrush="Transparent">
     <Grid>
-        <Border CornerRadius="20">
+        <Border CornerRadius="12">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#e07e74" Offset="0"/>
@@ -22,18 +23,17 @@
         </Border>
         <Grid Background="Black"
               Opacity="{Binding Value, ElementName=opacitySlider}" Margin="0,25,0,25">
- 
+
         </Grid>
         <Slider Name="opacitySlider" Maximum="1" Width="250" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,45,0,0"/>
         <StackPanel
                     VerticalAlignment="Top"
                     Height="25"
-                    Background="Black" Opacity="0.4"
-            MouseDown="StackPanel_MouseDown">
-        </StackPanel>
+                    Background="Black" Opacity="0.2"
+            MouseDown="StackPanel_MouseDown"/>
         <StackPanel
                     VerticalAlignment="Bottom"
                     Height="25"
-                    Background="Black" Opacity="0.4"/>
+                    Background="Black" Opacity="0.2"/>
     </Grid>
 </Window>
