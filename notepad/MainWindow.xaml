@@ -85,15 +85,53 @@
 
 
 
-
+        <StackPanel>
         <StackPanel
-            
                     VerticalAlignment="Top"
                     Height="25"
                     Background="Black"
-                    Opacity="0"
-                    MouseDown="StackPanel_MouseDown"/>
-        <StackPanel VerticalAlignment="Top"
+                    Opacity="0.15"
+                    MouseDown="StackPanel_MouseDown">
+
+
+            
+        </StackPanel>
+
+        <StackPanel>
+                <ToggleButton x:Name="ToggleSettingsButton" Height="20" Width="50" HorizontalAlignment="Right">
+                    
+                    <StackPanel>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Run Text="Settings"/>
+                        </TextBlock>
+
+                        <Popup Name="myPopup" IsOpen="{Binding IsChecked, ElementName=ToggleSettingsButton}">
+                            <Border BorderThickness="1">
+                                <Grid>
+                                    <TextBlock Name="myPopupText" Foreground="White" Height="350" Width="200">
+                                        <TextBlock.Background>
+                                            <LinearGradientBrush Opacity="0.8">
+                                                <GradientStop Color="#e07e74" Offset="0"/>
+                                                <GradientStop Color="#b84b6e" Offset="0.5"/>
+                                                <GradientStop Color="#c3043c" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TextBlock.Background>
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                        </Popup>
+                    </StackPanel>
+                </ToggleButton>
+
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel VerticalAlignment="Center"
+                    Height="396"
+                    Width="2"
+                    Margin="0,0,790,0"
+                    Background="Black" Opacity="0.3"/>
+        <StackPanel HorizontalAlignment="Left"
                     Height="2"
                     Margin="0,25,0,0"
                     Background="Black" Opacity="0.3"/>
