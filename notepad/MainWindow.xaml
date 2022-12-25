@@ -12,15 +12,6 @@
         Background="Transparent"
         BorderBrush="Transparent">
     <Grid>
-                    <TextBox x:Name="canvas" 
-                     VerticalAlignment="Bottom" 
-                     Height="350" 
-                     Width="800" 
-                     Foreground="White" 
-                     Background="Transparent" 
-                     BorderThickness="0" 
-                     BorderBrush="Transparent" 
-                     FontSize="17"/>
         <Border CornerRadius="12">
             <Border.Background>
                 <LinearGradientBrush>
@@ -33,7 +24,17 @@
         <Grid Background="Black"
               Opacity="{Binding Value, ElementName=opacitySlider}" Margin="0,25,0,25">
         </Grid>
-        
+
+        <TextBox x:Name="canvas" 
+                     VerticalAlignment="Bottom" 
+                     Height="350" 
+                     Width="800" 
+                     Foreground="White" 
+                     Background="Transparent" 
+                     BorderThickness="0" 
+                     BorderBrush="Transparent" 
+                     FontSize="17"/>
+
         <Slider Name="opacitySlider" Maximum="1" Width="250" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0"/>
         <StackPanel
                     VerticalAlignment="Top"
