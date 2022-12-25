@@ -22,18 +22,26 @@
             </Border.Background>
         </Border>
         <Grid Background="Black"
+              Height="auto"
+              Width="790"
               Opacity="{Binding Value, ElementName=opacitySlider}" Margin="0,25,0,25">
         </Grid>
 
         <TextBox x:Name="canvas" 
-                     VerticalAlignment="Bottom" 
-                     Height="350" 
-                     Width="800" 
-                     Foreground="White" 
-                     Background="Transparent" 
-                     BorderThickness="0" 
-                     BorderBrush="Transparent" 
-                     FontSize="17"/>
+         ScrollViewer.HorizontalScrollBarVisibility="Auto"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"
+         ScrollViewer.CanContentScroll="True"
+                 VerticalAlignment="Center" 
+                 Height="350" 
+                 Width="780" 
+                 Foreground="White" 
+                 Background="Transparent" 
+                 BorderThickness="0"
+                 FontSize="17"
+                 Margin="0,40,0,0"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"/>
+
 
         <Slider Name="opacitySlider" Maximum="1" Width="250" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0"/>
         <StackPanel
