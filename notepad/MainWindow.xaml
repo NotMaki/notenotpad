@@ -12,6 +12,9 @@
         Background="Transparent"
         BorderBrush="Transparent">
     <Grid>
+        
+        
+        
         <Border CornerRadius="12">
             <Border.Background>
                 <LinearGradientBrush>
@@ -21,11 +24,26 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <Grid Background="Black"
               Height="auto"
               Width="790"
               Opacity="{Binding Value, ElementName=opacitySlider}" Margin="0,25,0,25">
         </Grid>
+
 
         <TextBox x:Name="canvas" 
          ScrollViewer.HorizontalScrollBarVisibility="Auto"
@@ -42,9 +60,34 @@
                  AcceptsReturn="True"
                  AcceptsTab="True"/>
 
-
         <Slider Name="opacitySlider" Maximum="1" Width="250" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <StackPanel
+            
                     VerticalAlignment="Top"
                     Height="25"
                     Background="Black"
