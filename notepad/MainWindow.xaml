@@ -100,11 +100,11 @@
         <StackPanel>
                 <ToggleButton x:Name="ToggleSettingsButton" Height="20" Width="50" HorizontalAlignment="Right">
                     
-                    <StackPanel>
+                    <DockPanel>
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">
             <Run Text="Settings"/>
                         </TextBlock>
-
+                        
                         <Popup Name="myPopup" IsOpen="{Binding IsChecked, ElementName=ToggleSettingsButton}">
                             <Border BorderThickness="1">
                                 <Grid>
@@ -120,7 +120,7 @@
                                 </Grid>
                             </Border>
                         </Popup>
-                    </StackPanel>
+                    </DockPanel>
                 </ToggleButton>
 
             </StackPanel>
