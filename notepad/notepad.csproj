@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="notenotpad.ico" />
+    <Content Include="src\notenotpad.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="settings.png">
+    <Resource Include="src\settings.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

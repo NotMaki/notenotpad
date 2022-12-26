@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,5 +50,19 @@ namespace notepad
             }
         }
 
+        private void SaveFile_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if (saveFileDialog.ShowDialog() == true)
+                File.WriteAllText(saveFileDialog.FileName, canvas.Text);
+            saveFileDialog.Filter = "Text file (*.txt)|*.txt";
+        }
+
+        private void OpenFile_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                canvas.Text = File.ReadAllText(openFileDialog.FileName);
+        }
     }
 }

@@ -38,7 +38,12 @@
 
 
 
+        <StackPanel Orientation="Horizontal" Margin="10,27,0,0" Height="35" VerticalAlignment="Top">
+            
+            <Image Source="src/folder.png" Margin="5,0,0,0" Height="30" Width="30" MouseDown="OpenFile_MouseDown"/>
+            <Image Source="src/floppy-disk.png" Margin="10,0,0,0" Height="30" Width="30" MouseDown="SaveFile_MouseDown"/>
 
+        </StackPanel>
 
         <Grid Background="Black"
               Height="auto"
@@ -108,7 +113,7 @@
 
                     <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 
-                        <Image Source="settings.png">
+                        <Image Source="src/settings.png">
                         </Image>
 
                         <Popup Name="myPopup" IsOpen="{Binding IsChecked, ElementName=ToggleSettingsButton}" StaysOpen="True">
