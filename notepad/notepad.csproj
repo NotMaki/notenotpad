@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <None Remove="settings.png" />
+    <None Remove="src\floppy-disk.png" />
+    <None Remove="src\folder.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +19,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="src\floppy-disk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\folder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="src\settings.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
