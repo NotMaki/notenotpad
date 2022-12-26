@@ -12,9 +12,9 @@
         Background="Transparent"
         BorderBrush="Transparent">
     <Grid>
-        
-        
-        
+
+
+
         <Border CornerRadius="12">
             <Border.Background>
                 <LinearGradientBrush>
@@ -24,20 +24,20 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <Grid Background="Black"
               Height="auto"
               Width="790"
@@ -86,36 +86,23 @@
 
 
         <StackPanel>
-        <StackPanel
-                    VerticalAlignment="Top"
-                    Height="25"
-                    Background="Black"
-                    Opacity="0.15"
-                    MouseDown="StackPanel_MouseDown">
 
-
-            
-        </StackPanel>
-
-        <StackPanel>
+            <StackPanel x:Name="settingscontainer" HorizontalAlignment="Right" Margin="0,0,0,0" Height="25" Width="25">
+                <StackPanel.Background>
+                    <SolidColorBrush>
+           
+                    </SolidColorBrush>
+                </StackPanel.Background>
                 <ToggleButton x:Name="ToggleSettingsButton"
+                              Margin="0,2,0,0"
                               Height="20"
                               Width="20"
-                              HorizontalAlignment="Right"
                               BorderThickness="0"
                               Background="Transparent">
-                    
-                    <DockPanel>
 
-                        <Image Source="settings.png" RenderTransformOrigin="0.5,0.5" >
-                            <Image.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform/>
-                                    <SkewTransform/>
-                                    <RotateTransform Angle="-11.374"/>
-                                    <TranslateTransform/>
-                                </TransformGroup>
-                            </Image.RenderTransform>
+                    <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                        <Image Source="settings.png">
                         </Image>
 
                         <Popup Name="myPopup" IsOpen="{Binding IsChecked, ElementName=ToggleSettingsButton}" StaysOpen="True">
@@ -129,6 +116,7 @@
                                                 <GradientStop Color="#c3043c" Offset="1"/>
                                             </LinearGradientBrush>
                                         </TextBlock.Background>
+                                        ceededed
                                     </TextBlock>
                                 </Grid>
                             </Border>
@@ -137,6 +125,16 @@
                 </ToggleButton>
 
             </StackPanel>
+
+            <StackPanel
+                    Margin="0,-25,0,0"
+                    Height="25"
+                    Background="Black"
+                    Opacity="0.15"
+                    MouseDown="StackPanel_MouseDown"
+                    Width="750"/>
+
+            
         </StackPanel>
 
         <StackPanel VerticalAlignment="Center"
