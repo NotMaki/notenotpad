@@ -60,7 +60,7 @@
                  AcceptsReturn="True"
                  AcceptsTab="True"/>
 
-        <Slider Name="opacitySlider" Maximum="1" Width="250" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0"/>
+
 
 
 
@@ -107,7 +107,7 @@
                         <Popup Name="myPopup" IsOpen="{Binding IsChecked, ElementName=ToggleSettingsButton}" StaysOpen="True">
                             <Border BorderThickness="1">
                                 <Grid>
-                                    <TextBlock Name="myPopupText" Foreground="White" Height="350" Width="200">
+                                    <TextBlock Name="myPopupText" Foreground="White" Height="350" Width="200" Margin="0,15,0,0" HorizontalAlignment="Center">
                                         <TextBlock.Background>
                                             <LinearGradientBrush Opacity="0.8">
                                                 <GradientStop Color="#e07e74" Offset="0"/>
@@ -115,8 +115,9 @@
                                                 <GradientStop Color="#c3043c" Offset="1"/>
                                             </LinearGradientBrush>
                                         </TextBlock.Background>
-                                        ceededed
+                                        Color Overlay
                                     </TextBlock>
+                                    <Slider Name="opacitySlider" Maximum="1" Width="190" Height="20" HorizontalAlignment="Center" Margin="0,10,0,0"/>
                                 </Grid>
                             </Border>
                         </Popup>
