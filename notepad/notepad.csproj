@@ -9,7 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="settings.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="notenotpad.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="settings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

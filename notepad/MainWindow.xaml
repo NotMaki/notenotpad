@@ -98,14 +98,26 @@
         </StackPanel>
 
         <StackPanel>
-                <ToggleButton x:Name="ToggleSettingsButton" Height="20" Width="50" HorizontalAlignment="Right">
+                <ToggleButton x:Name="ToggleSettingsButton"
+                              Height="20"
+                              Width="20"
+                              HorizontalAlignment="Right"
+                              BorderThickness="0"
+                              Background="Transparent">
                     
                     <DockPanel>
-                        
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Run Text="Settings"/>
-                        </TextBlock>
-                        
+
+                        <Image Source="settings.png" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-11.374"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Image.RenderTransform>
+                        </Image>
+
                         <Popup Name="myPopup" IsOpen="{Binding IsChecked, ElementName=ToggleSettingsButton}" StaysOpen="True">
                             <Border BorderThickness="1">
                                 <Grid>
