@@ -89,9 +89,8 @@
 
             <StackPanel x:Name="settingscontainer" HorizontalAlignment="Right" Margin="0,0,0,0" Height="25" Width="25">
                 <StackPanel.Background>
-                    <SolidColorBrush>
-           
-                    </SolidColorBrush>
+                    <SolidColorBrush Color="Black" Opacity="0.15"/>
+                    
                 </StackPanel.Background>
                 <ToggleButton x:Name="ToggleSettingsButton"
                               Margin="0,2,0,0"
@@ -124,6 +123,16 @@
                     </DockPanel>
                 </ToggleButton>
 
+            </StackPanel>
+
+            <StackPanel>
+
+                <StackPanel x:Name="corner" HorizontalAlignment="Left" Margin="0,-24,0,0" Height="25" Width="25" MouseDown="StackPanel_MouseDown">
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="Black" Opacity="0.15"/>
+
+                    </StackPanel.Background>
+                </StackPanel>
             </StackPanel>
 
             <StackPanel
