@@ -48,10 +48,12 @@
 
 
         <TextBox x:Name="canvas" 
-     
-         ScrollViewer.HorizontalScrollBarVisibility="Auto"
-         ScrollViewer.VerticalScrollBarVisibility="Auto"
-         ScrollViewer.CanContentScroll="True"
+         HorizontalScrollBarVisibility="Disabled"
+         VerticalScrollBarVisibility="Visible"
+                 
+                 TextWrapping="Wrap"
+                 IsReadOnly="False"
+                 TextAlignment="Left"
                  VerticalAlignment="Center" 
                  Height="350" 
                  Width="780" 
