@@ -38,19 +38,21 @@
 
 
 
+ 
+
+        <Grid Background="Black"
+              Height="398"
+              Width="790"
+              Opacity="{Binding Value, ElementName=opacitySlider}" Margin="0,25,0,25" VerticalAlignment="Top"
+              >
+        </Grid>
+
         <StackPanel Orientation="Horizontal" Margin="10,27,0,0" Height="35" VerticalAlignment="Top">
-            
+
             <Image Source="src/folder.png" Margin="5,0,0,0" Height="30" Width="30" MouseDown="OpenFile_MouseDown"/>
             <Image Source="src/floppy-disk.png" Margin="10,0,0,0" Height="30" Width="30" MouseDown="SaveFile_MouseDown"/>
 
         </StackPanel>
-
-        <Grid Background="Black"
-              Height="auto"
-              Width="790"
-              Opacity="{Binding Value, ElementName=opacitySlider}" Margin="0,25,0,25">
-        </Grid>
-
 
         <TextBox x:Name="canvas" 
          HorizontalScrollBarVisibility="Disabled"
