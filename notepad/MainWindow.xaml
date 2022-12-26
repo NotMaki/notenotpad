@@ -101,11 +101,12 @@
                 <ToggleButton x:Name="ToggleSettingsButton" Height="20" Width="50" HorizontalAlignment="Right">
                     
                     <DockPanel>
+                        
                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Run Text="Settings"/>
+                        <Run Text="Settings"/>
                         </TextBlock>
                         
-                        <Popup Name="myPopup" IsOpen="{Binding IsChecked, ElementName=ToggleSettingsButton}">
+                        <Popup Name="myPopup" IsOpen="{Binding IsChecked, ElementName=ToggleSettingsButton}" StaysOpen="True">
                             <Border BorderThickness="1">
                                 <Grid>
                                     <TextBlock Name="myPopupText" Foreground="White" Height="350" Width="200">

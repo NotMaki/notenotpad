@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -23,6 +24,20 @@ namespace notepad
         public MainWindow()
         {
             InitializeComponent();
+            double initialTop = 0d;
+            double initialLeft = 0d;
+            Loaded += (s, e) =>
+            {
+                initialTop = Top;
+                initialLeft = Left;
+            };
+
+            LocationChanged += (s, ea) =>
+            {
+                var offset = myPopup.HorizontalOffset;
+                myPopup.HorizontalOffset = offset + 1;
+                myPopup.HorizontalOffset = offset;
+            };
         }
 
         private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
